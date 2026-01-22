@@ -1,146 +1,136 @@
-# gallery.html
-my history
-<section id="photo-albums">
+gallery.html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery | Dr. Manish Kumar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
   <style>
-#photo-albums {
-  margin: 2rem 0;
-}
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin:0; background:#f5f7fa; color:#34495e; }
+    header, footer { background:#2c3e50; color:#ecf0f1; padding:1rem 0; }
+    .container { max-width: 1100px; margin:0 auto; padding:0 1rem; }
+    nav a { color:#ecf0f1; margin-right:1.5rem; text-decoration:none; font-weight:500; }
+    nav a:hover { color:#3498db; }
+    h1 { margin:0 0 .3rem; }
+    main { padding:2rem 0 3rem; }
+    h2 { margin-bottom:1rem; border-bottom:2px solid #3498db; padding-bottom:.5rem; }
 
-#photo-albums h2,
-#photo-albums h3 {
-  font-family: sans-serif;
-}
+    .album { margin-bottom:2.5rem; }
+    .album h3 { margin-bottom:.5rem; }
+    .album p { margin-bottom:1rem; color:#7f8c8d; }
 
-.album-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+    .gallery-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      gap:1.25rem;
+    }
+    figure {
+      background:#fff;
+      border-radius:8px;
+      overflow:hidden;
+      box-shadow:0 3px 8px rgba(0,0,0,.12);
+      margin:0;
+    }
+    figure img {
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      display:block;
+    }
+    figcaption {
+      padding:.6rem .75rem;
+      font-size:.9rem;
+      text-align:center;
+    }
 
-.album-grid figure {
-  width: 180px;
-  margin: 0;
-}
-
-.album-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-.album-grid figcaption {
-  font-size: 0.85rem;
-  text-align: center;
-  margin-top: 0.25rem;
-}
-</style>
-  <h2>Photo Albums</h2>
-<style>
-  /* Section styling */
-#gallery {
-  padding: 2rem 1rem;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-#gallery h2 {
-  font-family: sans-serif;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-/* Responsive grid */
-.gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-/* Each item */
-.gallery-item {
-  flex: 1 1 calc(25% - 1rem); /* 4 columns on large screens */
-  max-width: calc(25% - 1rem);
-  box-sizing: border-box;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-  object-fit: cover;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-}
-
-.gallery-item figcaption {
-  font-size: 0.85rem;
-  text-align: center;
-  margin-top: 0.25rem;
-}
-
-/* Medium screens: 2 columns */
-@media screen and (max-width: 800px) {
-  .gallery-item {
-    flex: 1 1 calc(50% - 1rem);
-    max-width: calc(50% - 1rem);
-  }
-}
-
-/* Small screens: 1 column */
-@media screen and (max-width: 500px) {
-  .gallery-item {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
-
-</style>
-
-  <!-- Album 1 -->
-  <h3>Research Visits</h3>
-  <div class="album-grid">
-    <figure>
-      <img src="assets/images/albums/research/paris_2022.jpg" alt="Paris conference 2022">
-      <figcaption>Paris, 2022 – Conference on Physics</figcaption>
-    </figure>
-    <figure>
-      <img src="assets/images/albums/research/prague_2019.jpg" alt="Prague Terahertz meeting">
-      <figcaption>Prague, 2019 – Terahertz Meeting</figcaption>
-    </figure>
-    <!-- Add more <figure> blocks as needed -->
+    footer p { text-align:center; margin:0; font-size:.85rem; }
+    @media (max-width:600px) {
+      header .container { text-align:center; }
+      nav { margin-top:.5rem; }
+      nav a { display:inline-block; margin:.2rem .5rem; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+      <div>
+        <h1>Dr. Manish Kumar</h1>
+        <div style="font-size:.9rem;">Assistant Professor, IIT (BHU) Varanasi</div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="publications.html">Publications</a>
+        <a href="research.html">Research</a>
+      </nav>
+    </div>
   </div>
+</header>
 
-  <!-- Album 2 -->
-  <h3>Family & Personal</h3>
-  <div class="album-grid">
-    <figure>
-      <img src="assets/images/albums/family/family1.jpg" alt="Family photo">
-      <figcaption>Family</figcaption>
-    </figure>
-    <!-- More photos -->
-  </div>
-</section>
-
-<section id="gallery">
+<main class="container">
   <h2>Photo Gallery</h2>
 
-  <div class="gallery-grid">
-    <figure class="gallery-item">
-      <img src="assets/images/gallery/photo1.jpg" alt="Description 1">
-      <figcaption>Paris, 2022 – Conference</figcaption>
-    </figure>
+  <section class="album">
+    <h3>International Conferences</h3>
+    <p>Photographs from invited talks and conferences in Japan, Prague, Zurich, Chicago, Singapore and other venues.</p>
+    <div class="gallery-grid">
+      <figure>
+        <img src="DSC00451.jpg" alt="Japan Conference 2009">
+        <figcaption>Japan, 2009 – Advances in Physics Conference</figcaption>
+      </figure>
+      <figure>
+        <img src="DSC00456.jpg" alt="Prague Terahertz Meeting 2019">
+        <figcaption>Prague, 2019 – EMN Meeting on Terahertz</figcaption>
+      </figure>
+      <figure>
+        <img src="DSC00465.jpg" alt="Zurich Physics Meeting">
+        <figcaption>Zurich, 2019 – World-wide Congregation on Physics</figcaption>
+      </figure>
+    </div>
+  </section>
 
-    <figure class="gallery-item">
-      <img src="assets/images/gallery/photo2.jpg" alt="Description 2">
-      <figcaption>Prague, 2019 – Terahertz Meeting</figcaption>
-    </figure>
+  <section class="album">
+    <h3>Field Visits & Rural Energy</h3>
+    <p>On-site demonstrations and field work for the 1.5 MW Integrated Dairy & Smart Hybrid Energy Systems and rural electrification projects.[file:83]</p>
+    <div class="gallery-grid">
+      <figure>
+        <img src="DSC02472.JPG" alt="Azamgarh demo 2016">
+        <figcaption>Azamgarh, 2016 – Hybrid Energy System Demonstration</figcaption>
+      </figure>
+      <figure>
+        <img src="DSCN3412.JPG" alt="Meghalaya planning board visit">
+        <figcaption>Meghalaya – Presentation to State Planning Board</figcaption>
+      </figure>
+      <figure>
+        <img src="20190223_055459.jpg" alt="Tamauli village site">
+        <figcaption>Tamauli village – Saansad Adarsh Gram Yojana site</figcaption>
+      </figure>
+    </div>
+  </section>
 
-    <figure class="gallery-item">
-      <img src="assets/images/gallery/photo3.jpg" alt="Description 3">
-      <figcaption>Meghalaya – Field Visit</figcaption>
-    </figure>
+  <section class="album">
+    <h3>Academic & Campus Life</h3>
+    <p>Moments from IIT (BHU) campus, laboratory environments, and interactions with students.[file:83]</p>
+    <div class="gallery-grid">
+      <figure>
+        <img src="IMG-20151017-WA0016.jpg" alt="Prototype lab">
+        <figcaption>Prototype Lab – Integrated Dairy & Smart Hybrid Energy Systems</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20151017-WA0033.jpg" alt="CERD center">
+        <figcaption>CERD, IIT (BHU) – Center for Energy Resources and Development</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
 
-    <!-- Add more <figure> blocks as needed -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Dr. Manish Kumar · ORCID: 0000-0001-6053-3667</p>
   </div>
-</section>
-
+</footer>
+</body>
+</html>
