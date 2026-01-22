@@ -95,7 +95,7 @@ gallery.html>
   </section>
 
   <section class="album">
-    <h3>Academic Campus Life & International Conferences</h3>
+    <h3>Academic & Campus Life </h3>
     <p>Moments from IIT (BHU) campus, laboratory environments, and interactions with students.[file:83]</p>
     <div class="gallery-grid">
       <figure>
@@ -114,7 +114,7 @@ gallery.html>
   </section>
 
   <section class="album">
-   <h3>International Conferences</h3>
+   <h3>International Conferences </h3>
     <p>Photographs from invited talks and conferences in Japan, Prague, Zurich, Chicago, Singapore etc.[file:83]</p>
     <div class="gallery-grid">
       <figure>
@@ -123,6 +123,10 @@ gallery.html>
       </figure>
       <figure>
         <img src="DSC00456.jpg" alt="Prague Terahertz Meeting 2019">
+        <figcaption>Prague, 2019 – EMN Meeting on Terahertz</figcaption>
+      </figure>
+      <figure>
+        <img src="DSC00457.jpg" alt="Prague Terahertz Meeting 2019">
         <figcaption>Prague, 2019 – EMN Meeting on Terahertz</figcaption>
       </figure>
       <figure>
