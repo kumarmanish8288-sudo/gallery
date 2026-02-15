@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Manish Kumar | VIMUKTI DIWAS (31/08/1952) | True Independence</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vkaravir/bib-publication-list@master/bib-publication-list.css">
+  <script src="https://cdn.jsdelivr.net/gh/vkaravir/bib-publication-list@master/bib-list-min.js"></script>
+  <link rel="stylesheet" href="https://orcid.org/sites/default/files/modules/orcid-angular-client/build/orcid.css">
+  <style>
+    :root { --primary: #3498db; --secondary: #2c3e50; --accent: #e74c3c; --light: #ecf0f1; --dark: #34495e; --shadow: 0 4px 12px rgba(0,0,0,0.15); --orcid-blue: #A6CE39; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--dark); background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+    header { background: white; box-shadow: var(--shadow); position: sticky; top: 0; z-index: 100; }
+    .header-content { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+    .logo h1 { color: var(--secondary); font-size: 1.8rem; font-weight: 700; }
+    .header-info { text-align: right; }
+    .tagline { color: var(--primary); font-size: 0.95rem; font-weight: 500; margin-bottom: 0.25rem; }
+    .orcid-badge { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: var(--orcid-blue); font-weight: 600; text-decoration: none; }
+    .orcid-badge:hover { color: #88b01a; }
+    nav a { color: var(--dark); text-decoration: none; margin-left: 2rem; font-weight: 500; transition: color 0.3s; }
+    nav a:hover, nav a.active { color: var(--primary); }
+    .hero { text-align: center; padding: 4rem 0; background: white; margin-bottom: 3rem; box-shadow: var(--shadow); }
+    .hero h2 { font-size: 2.5rem; color: var(--secondary); margin-bottom: 1rem; }
+    .hero p { font-size: 1.3rem; color: #7f8c8d; max-width: 600px; margin: 0 auto 1.5rem; font-style: italic; }
+    .hero-links { display: flex; gap: 1.5rem; justify-content: center; align-items: center; flex-wrap: wrap; }
+    section { background: white; margin-bottom: 3rem; border-radius: 12px; padding: 2.5rem; box-shadow: var(--shadow); }
+    section h2 { color: var(--secondary); font-size: 1.8rem; margin-bottom: 1.5rem; border-bottom: 3px solid var(--primary); padding-bottom: 0.5rem; display: flex; align-items: center; gap: 0.75rem; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+    figure { background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 3px 8px rgba(0,0,0,.12); margin:0; }
+    figure img { width:100%; height:180px; object-fit:cover; display:block; }
+    figcaption { padding:.6rem .75rem; font-size:.9rem; text-align:center; }
+    #pubTable_wrapper { margin-top: 2rem; }
+    #pubTable { font-size: 0.92rem; width: 100% !important; }
+    .timeline { position: relative; padding-left: 2rem; max-width: 800px; margin: 0 auto; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--primary); }
+    .timeline-item { position: relative; margin-bottom: 2.5rem; padding-left: 2rem; }
+    .timeline-item::before { content: ''; position: absolute; left: -34px; top: 0.5rem; width: 12px; height: 12px; background: var(--primary); border-radius: 50%; box-shadow: 0 0 0 3px white; }
+    .timeline-date { font-weight: 700; color: var(--primary); font-size: 0.95rem; }
+    .timeline-title { font-size: 1.2rem; color: var(--secondary); margin: 0.25rem 0; }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .project-card { background: var(--light); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    footer { background: var(--secondary); color: white; text-align: center; padding: 2rem 0; margin-top: 3rem; }
+    footer a { color: var(--primary); text-decoration: none; }
+    #vimukti-diwas { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; }
+    #vimukti-diwas h2 { color: white; border-bottom: 3px solid #f39c12; }
+    .vimukti-disclaimer { background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 12px; margin-top: 2rem; border: 2px dashed #f39c12; }
+    @media (max-width: 768px) { .header-content { flex-direction: column; gap: 1rem; text-align: center; } nav a { margin: 0 1rem; } .hero h2 { font-size: 2rem; } section { padding: 1.5rem; margin-bottom: 2rem; } }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo"><h1>Dr. Manish Kumar</h1></div>
+        <div class="header-info">
+          <div class="tagline">Assistant Professor, IIT (BHU) Varanasi</div>
+          <a href="https://orcid.org/0000-0001-6053-3667" target="_blank" class="orcid-badge" title="ORCID Profile">
+            <span class="orcid-icon"></span> ORCID: 0000-0001-6053-3667
+          </a>
+        </div>
+        <nav>
+          <a href="index.html" class="active">Home</a> | <a href="#news">News</a> | <a href="#presentation">Video Gallery</a> | <a href="gallery.html">Photo Gallery</a> | <a href="#poetry">Poetry</a> | <a href="#guestbook">Guestbook</a> | <a href="publications.html">Publications</a> | <a href="research.html">Research</a> | <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Bridging Theoretical Physics with Practical Energy Solutions</h2>
+      <p>"I integrate advanced theoretical physics with practical renewable energy applications to address real-world power challenges."</p>
+      <div class="hero-links">
+        <a href="https://orcid.org/0000-0001-6053-3667" target="_blank" class="orcid-badge" style="font-size: 1.1rem;">
+          <span class="orcid-icon" style="width: 24px; height: 24px;"></span> ORCID: 0000-0001-6053-3667
+        </a>
+        <a href="https://www.linkedin.com/in/manish-kumar-070755304/" target="_blank">LinkedIn</a>
+        <a href="mailto:kumarmanish8288@gmail.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Announcements Section (ENHANCED WITH BREAKING NEWS) -->
+  <section id="news" style="background: #fff; border-top: 4px solid var(--accent);">
+    <div class="container">
+      <h2>📢 Recent News, Announcements & Legal Developments</h2>
+      <div class="news-container" style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <!-- BREAKING: Supreme Court Stay -->
+        <div class="news-item" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.5rem; background: #f0f8ff; border-left: 5px solid #e74c3c; border-radius: 8px;">
+          <div class="news-date" style="background: #e74c3c; color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 700; min-width: 140px; text-align: center; font-size: 0.85rem;">BREAKING<br/>Jan 29, 2026</div>
+          <div class="news-content">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: #e74c3c;">⚡ Supreme Court Stays UGC Equity Regulations 2026</h3>
+            <p style="font-size: 0.95rem; color: var(--dark); line-height: 1.5;">The Supreme Court (Bench: CJI Surya Kant & Justice Joymalya Bagchi) stayed the controversial UGC regulations, citing "vagueness" and potential misuse. This development validates the constitutional issues raised in WPIL 13206/2013 regarding marginalized communities' educational rights.</p>
+            <p style="font-size: 0.85rem; color: #e74c3c; margin-top: 0.5rem;"><strong>Next Hearing:</strong> March 19, 2026</p>
+          </div>
+        </div>
+        <!-- CRITICAL: Allahabad High Court -->
+        <div class="news-item" style="display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.5rem; background: #fff3e0; border-left: 5px solid #ff9800; border-radius: 8px;">
+          <div class="news-date" style="background: #ff9800; color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 700; min-width: 140px; text-align: center; font-size: 0.85rem;">CRITICAL<br/>Jan 2026</div>
+          <div class="news-content">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: #ff9800;">📋 WPIL 13206/2013 Restoration Application Filed</h3>
+            <p style="font-size: 0.95rem; color: var(--dark); line-height: 1.5;">Restoration application filed in Allahabad High Court for WPIL 13206/2013. Application challenges dismissal and seeks Party-in-Person status. Ground: Justice Yashwant Varma under Supreme Court inquiry.</p>
+          </div>
+        </div>
+        <!-- Other news items -->
+        <div class="news-item" style="display: flex; gap: 1.5rem; align-items: flex-start; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+          <div class="news-date" style="background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 700; min-width: 120px; text-align: center;">Jan 2026</div>
+          <div class="news-content">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">New Research Submission</h3>
+            <p style="font-size: 0.95rem; color: var(--dark);">Submitted "Correlation of Prime Number with English & Hindi Alphabets" to 4th International Multidisciplinary Conference.</p>
+          </div>
+        </div>
+        <div class="news-item" style="display: flex; gap: 1.5rem; align-items: flex-start; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+          <div class="news-date" style="background: var(--primary); color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 700; min-width: 120px; text-align: center;">Dec 2025</div>
+          <div class="news-content">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Journal Review Published</h3>
+            <p style="font-size: 0.95rem; color: var(--dark);">"Review of electromagnetic theory based on two units" published in IJFMR Volume 7, Issue 1.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <h2>📸 Photo Gallery</h2>
+      <p>Research visits, conferences, and project demonstrations.</p>
+      <section class="album">
+        <h3>Field Visits & Rural Energy</h3>
+        <p>On-site demonstrations and field work for the 1.5 MW Integrated Dairy & Smart Hybrid Energy Systems and rural electrification projects.</p>
+        <div class="gallery-grid">
+          <figure>
+            <img src="DSCN3412.JPG" alt="Meghalaya planning board visit">
+            <figcaption>Meghalaya – Presentation to State Planning Board</figcaption>
+          </figure>
+          <figure>
+            <img src="DSCN3469.JPG" alt="Meghalaya planning board field visit">
+            <figcaption>Meghalaya – Field visit with State Planning Board</figcaption>
+          </figure>
+          <figure>
+            <img src="IMG-20151017-WA0033.jpg" alt="CERD center">
+            <figcaption>CERD, IIT (BHU) – Center for Energy Resources and Development</figcaption>
+          </figure>
+          <figure>
+            <img src="Screenshot_20190223-050513.png" alt="Creation of Multiverse from Electrical Energy flow">
+            <figcaption>Boston USA, 2018 – Creation of Multiverse from Electrical Energy flow from GOD in Space</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+
+  <!-- Publications -->
+  <section id="publications">
+    <div class="container">
+      <h2>📚 Peer-Reviewed Publications <a href="https://orcid.org/0000-0001-6053-3667" target="_blank" class="orcid-badge" style="font-size: 0.85rem; opacity: 0.8;">ORCID: 0000-0001-6053-3667</a></h2>
+      <p>Searchable list of 14+ publications. Use the search box above table or filter by keywords like "THz", "plasma", "2019".</p>
+      <table id="pubTable" class="display" style="width:100%"></table>
+    </div>
+  </section>
+
+  <!-- Video Grid Section -->
+  <section id="presentation">
+    <div class="container">
+      <h2>🎥 Research & Project Portfolio</h2>
+      <p style="margin-bottom: 2rem; color: #7f8c8d; font-style: italic;">Visual demonstrations of our work in theoretical physics and practical energy innovations.</p>
+      
+      <div class="video-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+        
+        <div class="video-card">
+          <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: var(--shadow);">
+            <iframe src="https://www.youtube.com/embed/fseTsDP3Pq0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h3 style="margin-top: 1.25rem; font-size: 1.2rem; color: var(--secondary);">Plasma Physics & Terahertz Radiation</h3>
+          <p style="font-size: 0.95rem; color: var(--dark); line-height: 1.4;">Joint practical done by B. Tech. students and village trainees at the prototype Smart Hybrid Energy Systems lab in Department of Electrical Engineering, IIT(BHU) Varanasi on May 2016.</p>
+        </div>
+
+        <div class="video-card">
+          <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: var(--shadow);">
+            <iframe src="https://www.youtube.com/embed/sI-j7KOhBEk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h3 style="margin-top: 1.25rem; font-size: 1.2rem; color: var(--secondary);">Smart Hybrid Energy Systems (Part 1)</h3>
+          <p style="font-size: 0.95rem; color: var(--dark); line-height: 1.4;">Demonstrating the 1.5 MW Integrated Dairy & Smart Hybrid Energy System pilot, bridging theoretical models with rural power solutions.</p>
+        </div>
+
+        <div class="video-card">
+          <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: var(--shadow);">
+            <iframe src="https://www.youtube.com/embed/focUJYW7Ah0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h3 style="margin-top: 1.25rem; font-size: 1.2rem; color: var(--secondary);">Smart Hybrid Energy Systems (Part 2)</h3>
+          <p style="font-size: 0.95rem; color: var(--dark); line-height: 1.4;">Demonstrating the 1.5 MW Integrated Dairy & Smart Hybrid Energy System pilot, bridging theoretical models with rural power solutions.</p>
+        </div>
+
+        <div class="video-card">
+          <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: var(--shadow);">
+            <iframe src="https://www.youtube.com/embed/q8Npz-jpx5Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h3 style="margin-top: 1.25rem; font-size: 1.2rem; color: var(--secondary);">Field Visits & Institutional Impact</h3>
+          <p style="font-size: 0.95rem; color: var(--dark); line-height: 1.4;">4th International Virtual Multidisciplinary Conference on "From Gurukul to Global: Paving Path to Viksit Bharat@2047."</p>
+        </div>
+
+        <div class="video-card">
+          <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: var(--shadow);">
+            <iframe src="https://www.youtube.com/embed/OoA_SCltgNc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h3 style="margin-top: 1.25rem; font-size: 1.2rem; color: var(--secondary);">Reverse Physics of Life & Energy Flow</h3>
+          <p style="font-size: 0.95rem; color: var(--dark); line-height: 1.4;">Exploring the reverse physics of life within the multiverse, investigating how electrical energy flow from space interacts with the astrology of life.</p>
+        </div>
+
+      </div>
+
+      <div class="resource-links" style="display: flex; gap: 1.5rem; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 2rem;">
+        <a href="resume_manish20251227.pdf" download style="display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; box-shadow: var(--shadow);">
+          📄 Download Academic Profile
+        </a>
+        <a href="https://www.youtube.com/@ManishKumar-r8f7q" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background-color: #ff0000; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; box-shadow: var(--shadow);">
+          🎬 Visit YouTube Channel
+        </a>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="#home" style="display: inline-block; padding: 0.75rem 1.5rem; background-color: var(--primary); color: white; text-decoration: none; border-radius: 30px; font-weight: 600; box-shadow: var(--shadow); transition: transform 0.3s, background-color 0.3s;" onmouseover="this.style.backgroundColor='#2980b9'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='var(--primary)'; this.style.transform='translateY(0)';">
+          ↑ Back to Menu
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section id="timeline">
+    <div class="container">
+      <h2>🎓 Academic & Professional Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Jul 2004 – Present</div>
+          <div class="timeline-title">Assistant Professor, IIT (BHU) Varanasi</div>
+          <p>24+ years teaching UG/PG courses; guided 1 PhD and 16 B.Tech projects; established the CERD center.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Nov 2001 – Jul 2004</div>
+          <div class="timeline-title">Junior Telecom Officer, BSNL</div>
+          <p>Managed BTS, BSC, and MSC operations, along with CCN responsibilities.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Jan 2008 – Dec 2010</div>
+          <div class="timeline-title">Ph.D. Plasma Physics, IIT Delhi</div>
+          <p>Thesis: Coherent Radiation Generation by particle beams and nonlinear mixing of lasers (CGPA: 8.00)</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2000</div>
+          <div class="timeline-title">M.Tech. Energy Studies, IIT Delhi</div>
+          <p>CGPA: 8.5 | Project: Numerical solution of non-linearity in Alfvén waves in plasmas</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">1997</div>
+          <div class="timeline-title">B.E. Electrical Engineering, MNNIT Allahabad</div>
+          <p>69.22% | Project: Design of Digital controller</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">1992</div>
+          <div class="timeline-title">Class 10+2, KV BHU Varanasi, C.B.S.E. Board</div>
+          <p>80.8% | Subject: English, Sanskrit, Mathematics, Physics, Chemistry</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">1990</div>
+          <div class="timeline-title">Class 10, KV BHU Varanasi, C.B.S.E. Board</div>
+          <p>77.2% | Subject: English, Hindi, Mathematics, Science, Social Science</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2>🚀 Key Projects & Contributions</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>1.5 MW Integrated Dairy & Smart Hybrid Energy Systems</h3>
+          <ul style="margin-left: 1.5rem;">
+            <li>Live demonstration in Azamgarh (2016)</li>
+            <li>5-acre pilot proposal for Meghalaya</li>
+            <li>Prototype laboratory at IIT (BHU)</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>Center for Energy Resources & Development (CERD)</h3>
+          <p>Established under MHRD F.A.S.T. scheme at IIT(BHU)</p>
+        </div>
+        <div class="project-card">
+          <h3>Book Publication</h3>
+          <p><em>Coherent Radiation Generation by Lasers and Particle Beams</em></p>
+          <p style="margin-top: 0.5rem; font-size: 0.9rem;">ISBN: 978-3-659-84512-3, Scholar's Press, 2016</p>
+        </div>
+        <div class="project-card">
+          <h3>Social Advocacy</h3>
+          <p>Founder President, Denotified Tribes Welfare Association (DTWA). Filed WPIL 13206/2013 in Allahabad High Court for constitutional protection of DNT communities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⚡ VIMUKTI DIWAS: THE ARROW OF JUSTICE (31/08/1952) ⚡ -->
+
+
+ <section id="vimukti-diwas" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white;">
+    <div class="container">
+      <div style="text-align: center; padding: 3rem 0;">
+        <h2 style="color: white; border-bottom: 3px solid #f39c12; margin-bottom: 2rem;">🏹 VIMUKTI DIWAS (August 31, 1952): THE ARROW OF TRUE INDEPENDENCE</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0;">
+          <!-- Card 1: Historical Significance -->
+          <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; border-left: 4px solid #f39c12;">
+            <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">⚔️ The Repealing of Colonial Oppression</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6;">
+              On August 31, 1952, the Government of India notification on the repealed the Criminal Tribes Act, 1871, which had branded 150+ tribes as "criminal" for 81 years. This day marks the TRUE INDEPENDENCE of the Denotified Tribes (DNT).
+            </p>
+          </div>
+          
+          <!-- Card 2: Legal Battle -->
+          <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; border-left: 4px solid #f39c12;">
+            <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">📋 The WPIL 13206/2013 Legacy</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6;">
+              Filed in Allahabad High Court to uphold constitutional rights of Denotified Tribes. Currently under restoration application following controversial dismissal. The struggle continues.
+            </p>
+          </div>
+          
+          <!-- Card 3: Supreme Court Alignment -->
+          <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; border-left: 4px solid #f39c12;">
+            <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">⚡ Supreme Court Stay (Jan 29, 2026)</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6;">
+              The Supreme Court's stay of UGC Equity Regulations 2026 validates the issues raised in WPIL 13206/2013. "Vagueness" in regulations harms marginalized communities.
+            </p>
+          </div>
+        </div>
+
+        <!-- Public Disclaimer -->
+        <div style="background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 12px; margin-top: 2rem; border: 2px dashed #f39c12;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">⚠️ PUBLIC DISCLAIMER & LEGAL DECLARATION</h3>
+          <p style="font-size: 0.95rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">
+            <strong>Dr. Manish Kumar, President of Denotified Tribes Welfare Association (DTWA),</strong> hereby declares that his legal struggles (WPIL 13206/2013, WRIA 11782/2020, WRIA 15347/2022) and scientific works are pursued for:
+          </p>
+          <ul style="list-style: none; padding: 1rem 0; font-size: 0.95rem;">
+            <li>✅ Constitutional Rights of Denotified Tribes</li>
+            <li>✅ Academic Integrity at IIT(BHU) Varanasi</li>
+            <li>✅ True Independence and Vimukti Diwas Recognition (31/08/1952)</li>
+            <li>✅ Prevention of Political Exploitation</li>
+          </ul>
+          <p style="font-size: 0.9rem; font-style: italic; margin-top: 1rem;">
+            These works are NOT affiliated with any political parties, campaigns, or the any upcoming elections. The cause of the Denotified Tribes is a matter of national policy and constitutional justice. This declaration is made to prevent misuse of the LONE SOLDIER's struggle for political mileage.
+          </p>
+        </div>
+
+        <!-- Call to Action -->
+        <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="#timeline" style="display: inline-block; padding: 0.8rem 2rem; background: white; color: #e74c3c; text-decoration: none; border-radius: 8px; font-weight: 700;">📜 My Legal Journey</a>
+          <a href="research.html" style="display: inline-block; padding: 0.8rem 2rem; background: #f39c12; color: #c0392b; text-decoration: none; border-radius: 8px; font-weight: 700;">📖 Research on Vimukti</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guestbook Section -->
+  <section id="guestbook">
+    <div class="container">
+      <h2>📝 Visitor Guestbook & Feedback</h2>
+      <div style="background: white; padding: 2.5rem; border-radius: 12px; box-shadow: var(--shadow); text-align: center;">
+        <p style="font-size: 1.1rem; color: var(--dark); margin-bottom: 2rem;">
+          I value your insights. Whether you have reflections on my research in plasma physics or thoughts on my literary works, please feel free to reach out.
+        </p>
+        
+        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+          <a href="mailto:kumarmanish8288@gmail.com?subject=Website%20Feedback" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 2rem; background-color: var(--primary); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; box-shadow: var(--shadow);">
+            ✉️ Submit Feedback
+          </a>
+          <a href="https://www.linkedin.com/in/manish-kumar-070755304/" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 2rem; background-color: #0077b5; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; box-shadow: var(--shadow);">
+            💬 Connect on LinkedIn
+          </a>
+        </div>
+        
+        <p style="margin-top: 2rem; font-size: 0.9rem; color: #7f8c8d; font-style: italic;">
+          "Your feedback is the catalyst for future discovery."
+        </p>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- Download Poetry Collection -->
+  <div style="text-align: center; margin-top: 3rem; background: #fdfcf0; padding: 2rem; border-radius: 12px; border: 1px dashed var(--primary); margin-left: 1rem; margin-right: 1rem;">
+    <p style="margin-bottom: 1.5rem; font-weight: 600; color: var(--secondary);">Would you like to read the complete poetry collections?</p>
+    <a href="Poetry collections.pdf" download style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 2rem; background-color: var(--secondary); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; box-shadow: var(--shadow); transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#34495e';" onmouseout="this.style.backgroundColor='var(--secondary)';">
+      📚 Download Full Poetry Collection (PDF)
+    </a>
+  </div>
+
+  <!-- Poetry & Literary Works Section -->
+  <section id="poetry">
+    <div class="container">
+      <h2>✍️ Poetry & Literary Reflections</h2>
+      <p style="margin-bottom: 2rem; color: #7f8c8d; font-style: italic;">
+        Reflections on life, advocacy, and the pursuit of justice through verse.
+      </p>
+      
+      <div class="poetry-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+        
+        <!-- Poem 1: Advocacy & Justice -->
+        <div class="poem-card" style="background: #fdfcf0; padding: 2.5rem; border-radius: 12px; box-shadow: var(--shadow); border-top: 4px solid var(--primary);">
+          <h3 style="color: var(--secondary); margin-bottom: 1rem; font-family: 'Georgia', serif;">Reflections on Advocacy</h3>
+          <div style="font-style: italic; white-space: pre-line; color: var(--dark); line-height: 1.8; font-family: 'Georgia', serif; font-size: 1.05rem;">
+In the halls of justice, where voices often fade,
+A silent strength emerges, in the choices that we made.
+For the tribes whose stories, the world chose to forget,
+We stand as their witness, with a sun that hasn't set.
+The law is but a vessel, the truth is but the light,
+Guiding every worker, through the longest night.
+          </div>
+        </div>
+
+        <!-- Poem 2: The Researcher's Path -->
+        <div class="poem-card" style="background: #fdfcf0; padding: 2.5rem; border-radius: 12px; box-shadow: var(--shadow); border-top: 4px solid var(--primary);">
+          <h3 style="color: var(--secondary); margin-bottom: 1rem; font-family: 'Georgia', serif;">The Quest for Truth</h3>
+          <div style="font-style: italic; white-space: pre-line; color: var(--dark); line-height: 1.8; font-family: 'Georgia', serif; font-size: 1.05rem;">
+From the dance of atoms, to the energy of stars,
+We measure out our progress, in the healing of our scars.
+A professor's duty, a scholar's sacred aim,
+To ignite the spark of knowledge, and feed the growing flame.
+Beyond the documented charges, and the bias of the few,
+Lies the quiet, steady purpose, of the work we have to do.
+          </div>
+        </div>
+
+        <!-- Poem 3: The AgniPath -->
+        <div class="poem-card" style="background: #fdfcf0; padding: 2.5rem; border-radius: 12px; box-shadow: var(--shadow); border-top: 4px solid var(--primary);">
+          <h3 style="color: var(--secondary); margin-bottom: 1rem; font-family: 'Georgia', serif;">The AgniPath - The Lone Soldier</h3>
+          <div style="font-style: italic; white-space: pre-line; color: var(--dark); line-height: 1.8; font-family: 'Georgia', serif; font-size: 1.05rem;">
+There was a loud whisper, From the embryo of Mother Nature
+Created all joys makes her happier, And gave birth to LONE SOLDIER
+Raising him was a challenge, To make strong against all change
+Milking from breast she arrange, Teaching skills to fight the Strange
+Care and love she gifted to child, Jealousy and hate make him wild
+But the journey was not mild, Every stranger gets him filed
+Nothing is impossible was the mantra, Black Magic was used as Tantra
+Artificial intelligence was a weapon Ultra, Lust and GREEDS were topped as Extra
+Thugs and dacoits became respected, Honesty and integrity were rejected
+Simplicity of women totally molested, Lone Soldier now was suspected
+Life of Lone Soldier was interesting, Remain calm in ever harassing
+Real time drama was featuring, That makes Lone Soldier Keep Smiling
+          </div>
+        </div>
+
+ <!-- Poem 4:  तेरह कसूर -->
+        <div class="poem-card" style="background: #fdfcf0; padding: 2.5rem; border-radius: 12px; box-shadow: var(--shadow); border-top: 4px solid var(--primary);">
+          <h3 style="color: var(--secondary); margin-bottom: 1rem; font-family: 'Georgia', serif;">तेरह कसूर</h3>
+          <div style="font-style: italic; white-space: pre-line; color: var(--dark); line-height: 1.8; font-family: 'Georgia', serif; font-size: 1.05rem;">
+तेरह तेरह तेरा कसूर , बनकर एक नासूर
+सोचा था दाल अरहर, निकली तू दाल मसूर 
+शुक्रवार को शुरू वार, फिर न मिले ऐसा ससूर 
+मुंह में राम बगल में छुरी, घायल हो गई ससूरी
+सारी खुदाई एक तरफ, जोरू का भाई दूसरी तरफ
+जग हंसाई में हो माहिर, शिकायत करें किस शहर
+सैर पर निकले ढूंढने घरौंदा, पीछे पड़े हजार परिंदा 
+जिंदगानी भी गर रही, तो नौजवानी फिर से कहां 
+बुद्धु लीला में फंसाया, बेटी ने तो जान-माल बचाया
+एक तरफ है मयकदा, दूसरी तरफ जाने से ही फायदा 
+घर घर की यही कहानी, नौकरियां ढूंढ़ती जवानी
+हम तो ठहरे परदेसी, आशीर्वाद बरसाते बिदेशी
+अग्निपथ पर जलते कदम, ठहरने का न है दम
+फिर शिकायत न करें दर्ज, तीन तेरह को है हर्ज
+हर्जाना भरने को है तैयार, मौका दो तिसरी बार
+कांटों से भरा  है सफर, साथ नहीं कोई हमसफर
+तेरह तेरह तेरा कसूर, हम तो हैं शुरू से बेकसूर 
+बचपन की गई यारी, अब तो पचपन की तैयारी 
+
+- घायल घरौंदा का एक परिंदा:-
+डॉ मनीष कुमार 🙏 13022026शुक्रवार१६२७
+
+          </div>
+        </div>
+
+<!-- Poem 5:  शून्य -->
+        <div class="poem-card" style="background: #fdfcf0; padding: 2.5rem; border-radius: 12px; box-shadow: var(--shadow); border-top: 4px solid var(--primary);">
+          <h3 style="color: var(--secondary); margin-bottom: 1rem; font-family: 'Georgia', serif;">शून्य</h3>
+          <div style="font-style: italic; white-space: pre-line; color: var(--dark); line-height: 1.8; font-family: 'Georgia', serif; font-size: 1.05rem;">
+शून्य  है जगत, शून्य  को प्राप्त तथागत।
+शून्य  को ही प्राप्त, शून्य होने की ताकत।
+शून्य ब्रह्म की शुरूवात, शून्य  ही है सर्वव्याप्त।
+शून्य करता अहं समाप्त, जीव होता शून्य  प्राप्त।
+जगत का आधार शून्य, शून्य  ही जीवन का मूल्य।
+प्रकाश का स्रोत शून्य, शून्य प्राप्त होना अतुल्य। 
+जीवन का सार शून्य, ज्ञान का आधार शून्य ।
+प्रयास कर दुःख करने को शून्य , इसी प्रयास की शिक्षा का है मुल्य। 
+शून्य को न समझना, है वजह जीवन-चक्र में उलझना।
+माया का है यह सपना, जीवन को शून्य से परे रखना।
+शून्य का पूर्ण ज्ञान,  देता इंसान को माया का भान।
+माया कितनी भी करे हैरान, शून्यता नहीं होने देती परेशान।
+शून्य है प्रेम की पहचान, क्योंकि प्रेम को शून्य अभिमान ।
+प्रेम है ईश्वर का वरदान, ईश्वर(शून्य) की पूर्णता महान।
+10-09-2017
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Back to Top for Poetry -->
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="#home" style="display: inline-block; padding: 0.6rem 1.2rem; background-color: var(--primary); color: white; text-decoration: none; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">↑ Back to Top</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>📞 Connect</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>Contact</h3>
+          <p><strong>Official Email:</strong> kumarmanish8288@gmail.com</p>
+          <p><strong>Alternate Email:</strong> kumarmanish21@yahoo.com</p>
+          <p><strong>Mobile:</strong> +91-8853951326, +91-7607101326</p>
+        </div>
+        <div>
+          <h3>Personal</h3>
+          <p><strong>DOB:</strong> 21-06-1974 | <strong>Nationality:</strong> Indian</p>
+          <p><strong>Languages:</strong> English, Hindi</p>
+          <p><strong>Hobbies:</strong> Astrophysics, Music, Chess, Cooking, Astrology, Numerology, Poetry</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025-2026 Dr. Manish Kumar | 
+        <a href="https://orcid.org/0000-0001-6053-3667" target="_blank" class="orcid-badge">
+          ORCID: 0000-0001-6053-3667
+        </a> | 
+        <a href="mailto:kumarmanish8288@gmail.com">Email</a> | 
+        <a href="https://www.linkedin.com/in/manish-kumar-070755304/" target="_blank">LinkedIn</a> | 
+        <a href="https://kumarmanish8288-sudo.github.io/kumarmanish2106">GitHub Pages</a>
+      </p>
+      <p style="margin-top: 1rem; font-size: 0.9rem; font-style: italic;">
+        "True Independence (Vimukti Diwas): August 31, 1952 - Celebrating Freedom from Oppression & Pursuit of Constitutional Justice"
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Core Logic -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        const navHeight = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navHeight - 20;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      if (menu) menu.classList.toggle('hidden');
+    }
+
+    const publicationData =  [
+      { type: 'journal', title: 'Correlation of Prime Number with English & Hindi Alphabets', source: 'submitted to 4th International Virtual (Online Conference) Multidisciplinary Conference', date: 'Dec 2025' },
+      { type: 'journal', title: 'Review of electromagnetic theory based on two units viz. second & meter', source: 'IJFMR Volume 7, Issue 1', date: 'Jan-Feb 2025', tag: 'Electromagnetic Theory' },
+      { type: 'conference', title: 'Effects of pH Change on the Operation of Electrolyzer and Fuel Cell', source: '2020 IEEE Students\' Conference on Engineering & Systems (SCES)', date: 'Jul 2020', tag: 'Energy Studies' },
+      { type: 'journal', title: 'Fuel Cells: Contamination and Recent Advancements for its Stabilization', source: 'MATTER: International Journal of Science and Technology, 5(3)', date: '2019', tag: 'Energy Studies' },
+      { type: 'journal', title: 'Effect of Magnetic Field Tapering on Whistler Pumped Free Electron Laser', source: 'AIP Advances 9, 025207', date: '2019', tag: 'Plasma Physics' },
+      { type: 'journal', title: 'Atomic energy as well as gravitational energy is another form of electrical energy', source: 'Journal of Mathematics and System Science 6', date: 'Feb 2017', tag: 'Theoretical Physics' },
+      { type: 'journal', title: 'Linear mode conversion of THz radiation into THz surface magnetoplasmons on a rippled surface of magnetized n-InSb', source: 'Optics Letters Vol. 41, No. 7', date: 'Apr 2016', tag: 'Terahertz Radiation' },
+      { type: 'journal', title: 'GOD doesn\'t play dice', source: 'International Journal of Scientific & Engineering Research, Volume 7, Issue 1', date: 'Jan 2016', tag: 'Meta-Physics' },
+      { type: 'journal', title: 'Comparative study of dispersion characteristics of uniaxial crystalline optical fibre under the extreme cases of helix pitch angles', source: 'Journal of Modern Optics', date: '2013', tag: 'Optics' },
+      { type: 'journal', title: 'Modal study of plasma cladded cylindrical optical fiber', source: 'Journal of Electromagnetic Waves and Applications', date: '2013', tag: 'Plasma/Optics' },
+      { type: 'journal', title: 'Beat excitation of Terahertz radiation in a semiconductor slab in a magnetic field', source: 'Journal of Physics and Chemistry of Solids 73', date: '2012', tag: 'Terahertz Radiation' },
+      { type: 'journal', title: 'Excitation of THz plasmons Eigen mode of a parallel plane guiding system by an electron beam', source: 'J. Appl. Phys. 108, 123303', date: '2010', tag: 'Terahertz Radiation' },
+      { type: 'journal', title: 'Resonant beat wave excitation of terahertz radiation in a magnetized plasma channel', source: 'Phys. Scr. 81, 045504', date: '2010', tag: 'Terahertz Radiation' },
+      { type: 'journal', title: 'Plasma effects in a travelling wave tube', source: 'Phys. Scr. 81, 025502', date: '2010', tag: 'Plasma Physics' },
+      { type: 'conference', title: 'Quantum Origin of Nano', source: 'International Conference on Advances in Physics, Mathematics and Applied Science Physics Conference 2022', date: 'Mar 2022', tag: 'Nano' },
+      { type: 'conference', title: 'Origin of Nano', source: '6th Annual Congress on Atomic, Nuclear and Plasma Physics International Webinar', date: 'Aug 2021', tag: 'Nano' },
+      { type: 'conference', title: 'Salvation theory as per the GOD\'s wish', source: '3rd International Conference on Applied Physics and Mathematics', date: 'Oct 2019', tag: 'Meta-Physics' },
+      { type: 'conference', title: 'Reverse physics of life in universe/multiverse from electrical energy flow from GOD in space through astrology of the life', source: 'Eurasia Research 2019, 3rd ICSTR Bangkok', date: 'Jul 2019', tag: 'Theoretical Physics' },
+      { type: 'conference', title: 'Terahertz radiation generation from tapered magnetic field Free Electron Laser', source: 'EMN Meeting on Terahertz 2019', date: 'Jun 2019', tag: 'Terahertz Radiation' },
+      { type: 'conference', title: 'Creation of Atomic Particles from Electrical Energy Flow from GOD in Space', source: '4th International Conference on Atomic and Nuclear Physics', date: 'Oct 2018', tag: 'Theoretical Physics' },
+      { type: 'conference', title: 'Atomic energy is the source of power which is another form of electrical energy', source: 'International Conference on Atomic and Nuclear Physics', date: 'Nov 2016', tag: 'Theoretical Physics' },
+      { type: 'conference', title: 'GOD doesn\'t play dice', source: 'International Conference on Physics', date: 'Jun 2016', tag: 'Meta-Physics' },
+      { type: 'conference', title: 'Workshop on Integrated Dairy & Smart Hybrid Energy Systems (Resource Person)', source: 'Gujarat Technological University', date: 'Apr 2015', tag: 'Energy Systems' },
+      { type: 'conference', title: 'Modal study of plasma cladded cylindrical optical fiber', source: 'Winter Symposium on Photonics and Optoelectronics (W-SOPO 2013)', date: 'Dec 2013', tag: 'Optics' },
+      { type: 'conference', title: 'Electrification of BHU hostels by Photovoltaic modules', source: 'Workshop on Advances in Energy Engineering & Technology', date: 'Jun 2013', tag: 'Energy Systems' },
+      { type: 'conference', title: 'Resonant beat wave excitation of terahertz radiation in a magnetized plasma channel', source: 'International Workshop on the Terahertz Technology 2009', date: 'Dec 2009', tag: 'Terahertz Radiation' }
+    ];
+
+    // If later you add a custom HTML list with id="publicationList" and a search input id="publicationSearch",
+    // you can reuse renderPublications/filterPublications here.
+  </script>
+
+  <!-- Publications JavaScript: BibTeX + smooth nav -->
+  <script>
+    $(document).ready(function() {
+      bibtexify("publications.bib", "pubTable", {
+        template: "#default",
+        datatable: {
+          pageLength: 50,
+          order: [[0, "desc"]],
+          dom: 'Bfrtip',
+          buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+      });
+
+      $('nav a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top - 80
+        }, 800);
+        $('nav a').removeClass('active');
+        $(this).addClass('active');
+      });
+    });
+  </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const newsContainer = document.getElementById('news-automated');
+        const searchInput = document.getElementById('news-search');
+        
+        function renderNews(filter = '') {
+            newsContainer.innerHTML = '';
+            
+            // Filter data based on search term
+            const filteredData = publicationData.filter(item => 
+                item.title.toLowerCase().includes(filter.toLowerCase()) || 
+                item.source.toLowerCase().includes(filter.toLowerCase()) ||
+                item.date.toLowerCase().includes(filter.toLowerCase())
+            ).slice(0, 5); // Show top 5 matches
+
+            if (filteredData.length === 0) {
+                newsContainer.innerHTML = '<p style="text-align:center; padding: 2rem; color: #7f8c8d;">No matching updates found.</p>';
+                return;
+            }
+
+            filteredData.forEach(item => {
+                const newsItem = document.createElement('div');
+                newsItem.className = 'news-item';
+                newsItem.style = 'display: flex; gap: 1.5rem; align-items: flex-start; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;';
+                
+                const isNew = item.date.includes('2025') || item.date.includes('2026');
+                const badgeColor = isNew ? 'var(--accent)' : 'var(--primary)';
+                
+                newsItem.innerHTML = `
+                    <div class="news-date" style="background: ${badgeColor}; color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 700; min-width: 120px; text-align: center;">
+                        ${item.date}
+                    </div>
+                    <div class="news-content">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">${item.type === 'journal' ? 'Journal Update' : 'Conference Update'}</h3>
+                        <p style="font-size: 0.95rem; color: var(--dark);">
+                            <strong>${item.title}</strong><br>
+                            <span style="font-style: italic; opacity: 0.8;">${item.source}</span>
+                        </p>
+                    </div>
+                `;
+                newsContainer.appendChild(newsItem);
+            });
+        }
+
+        // Initialize display
+        renderNews();
+
+        // Listen for search input
+        searchInput.addEventListener('input', (e) => {
+            renderNews(e.target.value);
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
+
